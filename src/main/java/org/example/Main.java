@@ -33,13 +33,12 @@ public class Main {
         player.setSymbol(playerSymbol);
         ai.setSymbol(aiSymbol);
 
-        System.out.println("You are " + playerSymbol);
+        System.out.println("In this round, you are " + playerSymbol);
 
         //If AI is 'X' - moves first
         if (playerSymbol == 'O') {
+            System.out.println("Your opponent will make the first move!");
             ai.makeMove(5);
-        } else {
-            System.out.print("Enter move (1-9): ");
         }
 
         while (true) {
